@@ -10,7 +10,5 @@ while (current <= 20) {
   current++;
 }
 
-console.log(sum); // 210
-
 
 console.log(sum)
