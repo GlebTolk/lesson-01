@@ -2,15 +2,12 @@
 // Результат присвойте переменной sum
 
 // your code
-let sum = 1;                 // теперь это просто «текущее число», а не сумма
-const numbers = [];          // сюда сохраняем все числа
+let sum = 0;                 // счётчик-итератор, не сумма
+const result = [];           // здесь храним все числа
 
-while (sum <= 20) {
-  numbers.push(sum);         // сохраняем число
-  sum++;                     // переходим к следующему
+while (sum < 20) {
+  result.push(sum + 1);      // добавляем число от 1 до 20
+sum++;
 }
 
-console.log(numbers);        // [1, 2, 3, ..., 20]
-// Если потом понадобится сумма, её можно посчитать отдельно:
-const total = numbers.reduce((acc, n) => acc + n, 0);
-console.log(total);   
+console.log(result);         // [1, 2, 3, ..., 20]
