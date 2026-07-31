@@ -3,13 +3,14 @@
 
 // your code
 let sum = 0;
+let current = 1;
 
-(function addNext(currentNumber) {
-    if (currentNumber > 20) {
-        return; // Базовое условие: если дошли до 21, останавливаем вызовы
-    }
-    
-    sum += currentNumber;   // Прибавляем текущее число
-    addNext(currentNumber + 1); // Рекурсивный вызов для следующего числа
-})(1); // Немедленно вызываем функцию, начиная с единицы
+while (current <= 20) {
+  sum += current;
+  current++;
+}
+
+console.log(sum); // 210
+
+
 console.log(sum)
