@@ -2,12 +2,12 @@
 // Результат присвойте переменной sum
 
 // your code
-let sum = 0;                 // счётчик-итератор, не сумма
-const result = [];           // здесь храним все числа
+let sum = 1;        // начальное значение — 1
+let current = 2;    // начинаем со второго числа
 
-while (sum < 20) {
-  result.push(sum + 1);      // добавляем число от 1 до 20
-sum++;
+while (current <= 20) {
+  sum += current;
+  current++;
 }
 
-console.log(result);         // [1, 2, 3, ..., 20]
+console.log(sum); 
